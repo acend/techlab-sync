@@ -13,12 +13,21 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  checkout-template:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: 'acend/hugo-training-template'
+          ref: 'master'
+          path: 'hugo-training-template'
+
+      - name: list files
+        run: ls -la hugo-training-template/
+
   checkout-amm:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
           repository: 'puzzle/amm-techlab'
@@ -27,6 +36,12 @@ jobs:
 
       - name: list files
         run: ls -la amm-techlab/
+
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: diff package.json
+        run: diff hugo-training-template/package.json amm-techlab/package.json
 
   build:
     # The type of runner that the job will run on
