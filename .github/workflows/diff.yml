@@ -23,6 +23,11 @@ jobs:
           path: 'hugo-training-template'
       - name: list files
         run: ls -la hugo-training-template/
+      - name: cache repo
+        uses: actions/cache@v2
+        with:
+          path: hugo-training-template/
+          key: hugo-training-template-repo
 
   checkout-amm:
     runs-on: ubuntu-latest
@@ -34,6 +39,11 @@ jobs:
           path: 'amm-techlab'
       - name: list files
         run: ls -la amm-techlab/
+      - name: cache repo
+        uses: actions/cache@v2
+        with:
+          path: amm-techlab/
+          key: amm-techlab-repo
 
   diff:
     runs-on: ubuntu-latest
