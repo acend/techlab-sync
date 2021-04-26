@@ -16,6 +16,9 @@ jobs:
   diff:
     runs-on: ubuntu-latest
     steps:
+      # Checks-out this repository under $GITHUB_WORKSPACE
+      - uses: actions/checkout@v2
+      # Checks-out the repositories to be diffed
       - name: checkout repos
         run: scripts/clone.sh
       - name: list repos
