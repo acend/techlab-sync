@@ -1,5 +1,25 @@
 # techlab-sync
 
+## usage
+
+1. check out repos:
+
+   ```s
+   scripts/clone.sh
+   ```
+
+1. diff repos
+
+   ```s
+   scripts/diff-repos.sh
+   ```
+
+1. diff custom repos
+
+   ```s
+   scripts/diff-repos.sh "puzzle/amm-techlab puzzle/jenkins-techlab"
+   ```
+
 ## repos
 
 base:

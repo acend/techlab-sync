@@ -1,7 +1,13 @@
 #!/bin/bash
 
+if (($# == 0)); then
+  echo "no input, using default values"
+  REPOS="puzzle/amm-techlab puzzle/jenkins-techlab"
+else
+  REPOS=$1
+fi
+
 BASE_REPO="acend/hugo-training-template"
-REPOS="puzzle/amm-techlab"
 VISUAL_DIFF=false
 REPORTS_PATH=reports
 REPOS_PATH=repos
