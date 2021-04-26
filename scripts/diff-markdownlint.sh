@@ -1,9 +1,24 @@
 #!/bin/bash
 
+echo "## diff-markdownlint.sh ##"
+
+if (($# == 0)); then
+  echo "no input, using default values"
+  REPOS_PATH=repos
+  BASE_REPO="acend/hugo-training-template"
+  REPO="puzzle/amm-techlab"
+  VISUAL_DIFF=true
+else
+  REPOS_PATH=$1
+  BASE_REPO=$2
+  REPO=$3
+  VISUAL_DIFF=$4
+fi
+
 FILE=.markdownlint.json
-REPOS_PATH=repos
 
-diff \
-  ${REPOS_PATH}/acend/hugo-training-template/${FILE} ${REPOS_PATH}/puzzle/amm-techlab/${FILE}
+diff ${REPOS_PATH}/${BASE_REPO}/${FILE} ${REPOS_PATH}/${REPO}/${FILE}
 
-meld ${REPOS_PATH}/acend/hugo-training-template/${FILE} ${REPOS_PATH}/puzzle/amm-techlab/${FILE}
+if [ "$VISUAL_DIFF" = true ]; then
+  meld ${REPOS_PATH}/${BASE_REPO}/${FILE} ${REPOS_PATH}/${REPO}/${FILE}
+fi

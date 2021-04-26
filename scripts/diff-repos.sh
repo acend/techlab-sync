@@ -1,17 +1,11 @@
 #!/bin/bash
 
-echo 0 $0
-echo 1 $1
-echo 2 $@
-echo h $#
-
-
 BASE_REPO="acend/hugo-training-template"
 REPOS="puzzle/amm-techlab"
 VISUAL_DIFF=false
 REPOS_PATH=repos
 SCRIPT_DIR=$(dirname $0)
-FILES="dockerfile gitignore package"
+FILES="dockerfile gitignore markdownlint package"
 
 # functions
 
