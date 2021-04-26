@@ -11,7 +11,7 @@ REPOS="puzzle/amm-techlab"
 VISUAL_DIFF=false
 REPOS_PATH=repos
 SCRIPT_DIR=$(dirname $0)
-FILES="package gitignore"
+FILES="dockerfile gitignore package"
 
 # functions
 
