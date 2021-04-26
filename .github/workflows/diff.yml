@@ -23,5 +23,12 @@ jobs:
         run: scripts/clone.sh
       - name: list repos
         run: ls -l repos/
+      # diff the repos
       - name: diff repos
         run: scripts/diff-repos.sh
+      # store the results
+      - name: archive diff results
+        uses: actions/upload-artifact@v2
+        with:
+          name: repo-diff-reports
+          path: reports/
