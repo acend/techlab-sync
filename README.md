@@ -32,7 +32,7 @@ ACEND:
 * [container-basics-training](https://github.com/acend/container-basics-training)
 * [helm-basics-training](https://github.com/acend/helm-basics-training)
 * [kubernetes-basics-training](https://github.com/acend/kubernetes-basics-training)
-* openshift-4-ops-training
+* [openshift-4-ops-training](https://github.com/acend/openshift-4-ops-training)
 
 Puzzle:
 
@@ -46,3 +46,8 @@ Puzzle:
 * openshift-update-training
 * ops-techlab-rancher
 * prometheus-training
+
+### Naming
+
+* techlab -> free
+* training -> chargeable
