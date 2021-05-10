@@ -19,8 +19,13 @@ FILES="action config contributing dockerfile gitignore husky license markdownlin
 diff_files () {
     repo=$1
     for file in $FILES; do
-        echo "## compare file: ${file} (${repo})##"
-        ./${SCRIPT_DIR}/diff-${file}.sh ${REPOS_PATH} ${BASE_REPO} ${repo} ${VISUAL_DIFF} | tee ${REPORTS_PATH}/${repo}/${file}.diff
+        echo "## compare file: ${file} (${repo}) ##"
+        DIFF_OUTPUT=$(${SCRIPT_DIR}/diff-${file}.sh ${REPOS_PATH} ${BASE_REPO} ${repo} ${VISUAL_DIFF} 2>&1)
+        if (($? != 0)); then
+          # diff detected
+          echo "$DIFF_OUTPUT" > ${REPORTS_PATH}/${repo}/${file}.diff
+          cat ${REPORTS_PATH}/${repo}/${file}.diff
+        fi
         echo ""
     done
 }
