@@ -18,9 +18,7 @@ fi
 FILE=CONTRIBUTING.md
 
 diff \
-  -I 'github_repo.*' \
-  -I 'title.*' \
-  -I 'url.*' \
+  -I '# How to contribute to.*' \
   ${REPOS_PATH}/${BASE_REPO}/${FILE} ${REPOS_PATH}/${REPO}/${FILE}
 
 if [ "$VISUAL_DIFF" = true ]; then

@@ -24,14 +24,14 @@
 
 base:
 
-* hugo-training-template
+* [hugo-training-template](https://github.com/acend/hugo-training-template)
 
 ACEND:
 
-* argocd-training
-* container-basics-training
-* helm-basics-training
-* kubernetes-basics-training
+* [argocd-training](https://github.com/acend/argocd-training)
+* [container-basics-training](https://github.com/acend/container-basics-training)
+* [helm-basics-training](https://github.com/acend/helm-basics-training)
+* [kubernetes-basics-training](https://github.com/acend/kubernetes-basics-training)
 * openshift-4-ops-training
 
 Puzzle:
