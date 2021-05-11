@@ -12,7 +12,7 @@ VISUAL_DIFF=false
 REPORTS_PATH=reports
 REPOS_PATH=repos
 SCRIPT_DIR=$(dirname $0)
-FILES="action config contributing dockerfile gitignore husky license markdownlint package renovate"
+FILES="action config contributing dockerfile gitignore husky license markdownlint package readme renovate"
 
 # functions
 
