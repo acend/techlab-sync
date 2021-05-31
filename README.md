@@ -41,7 +41,7 @@ Puzzle:
 * hugo-techlab
 * [jenkins-techlab](https://github.com/puzzle/jenkins-techlab)
 * keycloak-techlab
-* quarkus-techlab
+* [quarkus-techlab](https://github.com/puzzle/quarkus-techlab)
 * microservices-lab
 * openshift-update-training
 * ops-techlab-rancher
