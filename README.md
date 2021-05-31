@@ -36,10 +36,10 @@ ACEND:
 
 Puzzle:
 
-* amm-techlab
+* [amm-techlab](https://github.com/puzzle/amm-techlab)
 * ansible-training
 * hugo-techlab
-* jenkins-techlab
+* [jenkins-techlab](https://github.com/puzzle/jenkins-techlab)
 * keycloak-techlab
 * quarkus-techlab
 * microservices-lab
