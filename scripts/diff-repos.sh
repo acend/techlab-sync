@@ -2,7 +2,7 @@
 
 if (($# == 0)); then
   echo "no input, using default values"
-  REPOS="acend/argocd-training acend/container-basics-training acend/helm-basics-training acend/kubernetes-basics-training acend/openshift-4-ops-training puzzle/amm-techlab puzzle/jenkins-techlab puzzle/quarkus-techlab"
+  REPOS="acend/argocd-training acend/container-basics-training acend/helm-basics-training acend/kubernetes-basics-training acend/openshift-4-ops-training puzzle/amm-techlab puzzle/gitlab-ci-cd-training puzzle/jenkins-techlab puzzle/quarkus-techlab"
 else
   REPOS=$1
 fi
