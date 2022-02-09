@@ -47,6 +47,8 @@ Puzzle:
 * ops-techlab-rancher
 * prometheus-training
 
+Default list of repos is to diff is tracked here: [repos.txt](repos.txt)
+
 ### Naming
 
 * techlab -> free

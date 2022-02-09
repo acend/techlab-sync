@@ -1,14 +1,16 @@
 #!/bin/bash
 
+REPOS_PATH=repos
+SCRIPT_DIR=$(dirname $0)
+
 if (($# == 0)); then
   echo "no input, using default values"
-  REPOS="acend/argocd-training acend/container-basics-training acend/helm-basics-training acend/kubernetes-basics-training acend/openshift-4-ops-training puzzle/amm-techlab puzzle/gitlab-ci-cd-training puzzle/jenkins-techlab puzzle/quarkus-techlab"
+  REPOS=$(<${SCRIPT_DIR}/../repos.txt)
 else
   REPOS=$1
 fi
 
 REPOS="acend/hugo-training-template ${REPOS}"
-REPOS_PATH=repos
 
 rm -rf $REPOS_PATH
 mkdir -p $REPOS_PATH

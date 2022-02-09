@@ -1,0 +1,9 @@
+acend/argocd-training
+acend/container-basics-training
+acend/helm-basics-training
+acend/kubernetes-basics-training
+acend/openshift-4-ops-training
+puzzle/amm-techlab
+puzzle/gitlab-ci-cd-training
+puzzle/jenkins-techlab
+puzzle/quarkus-techlab

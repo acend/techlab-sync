@@ -1,18 +1,18 @@
 #!/bin/bash
 
-if (($# == 0)); then
-  echo "no input, using default values"
-  REPOS="acend/argocd-training acend/container-basics-training acend/helm-basics-training acend/kubernetes-basics-training acend/openshift-4-ops-training puzzle/amm-techlab puzzle/gitlab-ci-cd-training puzzle/jenkins-techlab puzzle/quarkus-techlab"
-else
-  REPOS=$1
-fi
-
 BASE_REPO="acend/hugo-training-template"
 VISUAL_DIFF=false
 REPORTS_PATH=reports
 REPOS_PATH=repos
 SCRIPT_DIR=$(dirname $0)
 FILES="action config contributing dockerfile gitignore husky license markdownlint package readme renovate"
+
+if (($# == 0)); then
+  echo "no input, using default values"
+  REPOS=$(<${SCRIPT_DIR}/../repos.txt)
+else
+  REPOS=$1
+fi
 
 # functions
 
