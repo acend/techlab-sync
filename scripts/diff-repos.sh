@@ -44,4 +44,5 @@ diff_repos () {
 
 # diff
 
+rm -rf $REPORTS_PATH
 diff_repos

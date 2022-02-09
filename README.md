@@ -28,24 +28,30 @@ base:
 
 ACEND:
 
-* [argocd-training](https://github.com/acend/argocd-training)
+* [argocd-basics-training](https://github.com/acend/argocd-basics-training)
+* [cilium-basics-training](https://github.com/acend/cilium-basics-training)
 * [container-basics-training](https://github.com/acend/container-basics-training)
+* [go-basics-training](https://github.com/acend/go-basics-training)
 * [helm-basics-training](https://github.com/acend/helm-basics-training)
 * [kubernetes-basics-training](https://github.com/acend/kubernetes-basics-training)
 * [openshift-4-ops-training](https://github.com/acend/openshift-4-ops-training)
+* [prometheus-training](https://github.com/acend/prometheus-training)
+* [terraform-training](https://github.com/acend/terraform-training)
 
 Puzzle:
 
 * [amm-techlab](https://github.com/puzzle/amm-techlab)
-* ansible-training
+* [ansible-training](https://github.com/puzzle/ansible-training)
+* [gitlab-ci-cd-training](https://github.com/puzzle/gitlab-ci-cd-training)
 * hugo-techlab
 * [jenkins-techlab](https://github.com/puzzle/jenkins-techlab)
+* [kafka-training](https://github.com/puzzle/kafka-training)
 * keycloak-techlab
-* [quarkus-techlab](https://github.com/puzzle/quarkus-techlab)
 * microservices-lab
-* openshift-update-training
+* [openshift-update-training](https://github.com/puzzle/openshift-update-training)
 * ops-techlab-rancher
-* prometheus-training
+* [prometheus-training](https://github.com/puzzle/prometheus-training)
+* [quarkus-techlab](https://github.com/puzzle/quarkus-techlab)
 
 Default list of repos is to diff is tracked here: [repos.txt](repos.txt)
 
