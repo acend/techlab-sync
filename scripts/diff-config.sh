@@ -5,7 +5,7 @@ check_input $@
 
 FILE=config/_default/config.toml
 
-IGNORE_LINES='copyright github_branch github_repo languageName modeSwitcher theme title url "# Enable expert mode"'
+IGNORE_LINES='copyright github_branch github_repo languageName modeSwitcher theme title url "# Enable expert mode" "# guessSyntax ="'
 IGNORE_GREP=""
 for value in $IGNORE_LINES; do
   IGNORE_GREP+="${value}.*|"
