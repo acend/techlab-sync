@@ -12,6 +12,8 @@ diff \
   -I 'namespace:.*' \
   -I 'puzzle versio.*' \
   -I 'quay.io.*' \
+  -I 'TRAINING_HELM_NAME*' \
+  -I 'TRAINING_NAMESPACE*' \
   ${REPOS_PATH}/${BASE_REPO}/${FILE} ${REPOS_PATH}/${REPO}/${FILE}
 
 after_diff

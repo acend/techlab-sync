@@ -5,7 +5,7 @@ VISUAL_DIFF=false
 REPORTS_PATH=reports
 REPOS_PATH=repos
 SCRIPT_DIR=$(dirname $0)
-FILES="action config contributing dockerfile gitignore husky license markdownlint package readme renovate"
+FILES="action config contributing dockerfile gitignore gitmodules helm husky license markdownlint package readme renovate"
 
 if (($# == 0)); then
   echo "no input, using default values"
