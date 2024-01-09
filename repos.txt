@@ -7,11 +7,11 @@ acend/kubernetes-basics-training
 acend/openshift-4-ops-training
 acend/prometheus-training
 acend/terraform-training
+acend/quarkus-techlab
+acend/microservices-lab
 puzzle/amm-techlab
 puzzle/ansible-training
 puzzle/gitlab-ci-cd-training
 puzzle/jenkins-techlab
-puzzle/kafka-training
 puzzle/openshift-update-training
 puzzle/prometheus-training
-puzzle/quarkus-techlab
