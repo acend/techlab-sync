@@ -37,6 +37,8 @@ ACEND:
 * [openshift-4-ops-training](https://github.com/acend/openshift-4-ops-training)
 * [prometheus-training](https://github.com/acend/prometheus-training)
 * [terraform-training](https://github.com/acend/terraform-training)
+* [microservices-lab](https://github.com/acend/microservices-lab)
+* [quarkus-techlab](https://github.com/acend/quarkus-techlab)
 
 Puzzle:
 
@@ -45,13 +47,11 @@ Puzzle:
 * [gitlab-ci-cd-training](https://github.com/puzzle/gitlab-ci-cd-training)
 * hugo-techlab
 * [jenkins-techlab](https://github.com/puzzle/jenkins-techlab)
-* [kafka-training](https://github.com/puzzle/kafka-training)
 * keycloak-techlab
 * microservices-lab
 * [openshift-update-training](https://github.com/puzzle/openshift-update-training)
 * ops-techlab-rancher
 * [prometheus-training](https://github.com/puzzle/prometheus-training)
-* [quarkus-techlab](https://github.com/puzzle/quarkus-techlab)
 
 Default list of repos is to diff is tracked here: [repos.txt](repos.txt)
 
